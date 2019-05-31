@@ -73,8 +73,8 @@ func getDiffForNewFiles() int {
 // getStatForDiff parses git diff output and combines the loc diff for every file
 func getStatForDiff() (int, int) {
 	diffArgs := []string{"diff", "--numstat"}
-	if len(os.Args) > 2 {
-		diffArgs = append(diffArgs, os.Args[2])
+	if len(os.Args) > 1 {
+		diffArgs = append(diffArgs, os.Args[1])
 	}
 
 	cmd := exec.Command("git", diffArgs...)
