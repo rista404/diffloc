@@ -1,4 +1,4 @@
-module github.com/rista404/git_diff_stat
+module github.com/rista404/diffloc
 
 go 1.12
 
